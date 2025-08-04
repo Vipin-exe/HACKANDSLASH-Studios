@@ -42,7 +42,7 @@
 
         :root {
             --primary-black: #000000;
-            --primary-red: #FF3B30;
+            --primary-red: #fd0000;
         }
 
         body {
@@ -54,7 +54,7 @@
         }
 
         .text-gradient {
-            background: linear-gradient(90deg, var(--primary-red) 0%, #FF6B6B 100%);
+            background: linear-gradient(90deg, var(--primary-red) 0%, #f90000 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
@@ -67,6 +67,7 @@
             transform: scale(1.05);
         }
     </style>
+
 </head>
 
 <body class="bg-gray-50">
@@ -74,7 +75,7 @@
     <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-sm shadow-sm">
         <div class="container mx-auto px-4 py-3 flex justify-between items-center">
             <div class="flex items-center">
-                <img src="./HACKANDSLASH__2_-removebg-preview.png" alt="Hackandslash Studios" class="h-10">
+                <img src="./H (1) (1).png" alt="Hackandslash Studios" class="h-10">
             </div>
             <div class="hidden md:flex space-x-8">
                 <a href="#home" class="text-gray-800 hover:text-red-500">Home</a>
@@ -101,31 +102,125 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="gradient-bg min-h-screen flex items-center pt-16 bg-cover bg-center" style="background-image: url('./HACKANDSLASH\ \(5\).png');">
-        <div class="container mx-auto px-4 py-16">
-            <div class="grid md:grid-cols-2 gap-8 items-center">
-                <div class="text-white space-y-6">
-                    <h1 class="text-4xl md:text-6xl font-bold">
-                        Transform Your <span class="text-gradient">Digital Presence</span>
-                    </h1>
-                    <p class="text-lg text-gray-300">
-                        We create stunning websites and digital solutions that help your business stand out in the digital world.
-                    </p>
-                    <div class="flex space-x-4">
-                        <a href="#contact" class="bg-red-500 hover:bg-red-600 text-white px-8 py-3 rounded-full font-medium transition-colors">
-                            Get Started
-                        </a>
-                        <a href="#portfolio" class="border border-white text-white px-8 py-3 rounded-full font-medium hover:bg-white hover:text-black transition-colors">
-                            View Portfolio
-                        </a>
-                    </div>
+    <!-- Hero Section -->
+    <section id="home" class="gradient-bg min-h-screen flex items-center justify-center pt-16 bg-cover bg-center relative overflow-hidden">
+        <!-- Dark overlay with gradient -->
+        <div class="absolute inset-0 bg-gradient-to-b from-black/80 via-black/70 to-black/90 z-0"></div>
+
+        <!-- Animated background elements -->
+        <div class="absolute inset-0 z-0 opacity-20">
+            <!-- Floating shapes -->
+            <div class="absolute w-32 h-32 bg-red-500/30 rounded-full top-1/4 left-1/4 animate-float" style="animation-duration: 15s;"></div>
+            <div class="absolute w-24 h-24 bg-white/10 rounded-full top-1/3 right-1/3 animate-float" style="animation-duration: 12s; animation-delay: 2s;"></div>
+            <div class="absolute w-40 h-40 bg-red-600/20 rounded-full bottom-1/4 right-1/4 animate-float" style="animation-duration: 18s; animation-delay: 1s;"></div>
+
+            <!-- Animated lines -->
+            <div class="absolute h-0.5 w-1/3 bg-gradient-to-r from-transparent via-red-500/40 to-transparent top-1/2 left-0 animate-pulse-width" style="animation-duration: 8s;"></div>
+            <div class="absolute h-0.5 w-1/4 bg-gradient-to-r from-transparent via-white/30 to-transparent bottom-1/3 right-0 animate-pulse-width" style="animation-duration: 6s; animation-delay: 1s;"></div>
+
+            <!-- Glowing dots -->
+            <div class="absolute w-2 h-2 bg-red-500 rounded-full top-1/4 right-1/4 animate-ping" style="animation-duration: 4s;"></div>
+            <div class="absolute w-1.5 h-1.5 bg-white rounded-full bottom-1/3 left-1/3 animate-ping" style="animation-duration: 3s; animation-delay: 1s;"></div>
+            <div class="absolute w-2.5 h-2.5 bg-red-600 rounded-full top-2/3 right-1/3 animate-ping" style="animation-duration: 5s; animation-delay: 2s;"></div>
+        </div>
+
+        <!-- Animated accent elements -->
+        <div class="absolute top-1/3 right-1/4 w-72 h-72 bg-gradient-to-r from-red-500/30 to-transparent rounded-full blur-xl animate-pulse"></div>
+        <div class="absolute bottom-1/3 left-1/4 w-64 h-64 bg-gradient-to-l from-red-500/30 to-transparent rounded-full blur-xl animate-pulse" style="animation-delay: 1s;"></div>
+        <div class="absolute top-2/3 left-1/2 w-48 h-48 bg-gradient-to-tr from-red-600/20 to-transparent rounded-full blur-xl animate-pulse" style="animation-delay: 2s;"></div>
+
+        <div class="container mx-auto px-4 py-16 relative z-10">
+            <div class="flex flex-col items-center justify-center text-center max-w-4xl mx-auto">
+                <div class="mb-6 inline-block animate-fade-in-up" style="animation-delay: 0.3s;">
+                    <span class="text-white text-sm uppercase tracking-widest font-medium">Hackandslash Studios</span>
+                    <div class="h-1 w-24 bg-gradient-to-r from-red-500 to-red-600 mt-2 mx-auto rounded-full"></div>
                 </div>
-                <div class="relative">
-                    <div class="absolute inset-0 bg-gradient-to-r from-red-500/20 to-transparent rounded-2xl"></div>
-                </div>
+
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-tight text-white mb-6 animate-fade-in-up" style="animation-delay: 0.6s;">
+                    Transform Your <span class="text-gradient inline-block">Digital Presence</span>
+                </h1>
+
+                <p class="text-lg md:text-xl text-gray-200 font-light max-w-2xl mb-6 animate-fade-in-up" style="animation-delay: 0.9s;">
+                    We create stunning websites and digital solutions that help your business stand out in the digital world.
+                </p>
             </div>
         </div>
+
+        <!-- Decorative elements -->
+        <div class="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-t from-black to-transparent z-0"></div>
     </section>
+
+    <!-- Add these animation styles to your existing style tag -->
+    <style>
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0) translateX(0);
+            }
+
+            25% {
+                transform: translateY(-15px) translateX(15px);
+            }
+
+            50% {
+                transform: translateY(10px) translateX(-10px);
+            }
+
+            75% {
+                transform: translateY(-5px) translateX(5px);
+            }
+        }
+
+        @keyframes pulse-width {
+
+            0%,
+            100% {
+                width: 0;
+                opacity: 0;
+            }
+
+            50% {
+                width: 33.333%;
+                opacity: 1;
+            }
+        }
+
+        @keyframes fade-in-up {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-float {
+            animation: float 20s ease-in-out infinite;
+        }
+
+        .animate-pulse-width {
+            animation: pulse-width 10s ease-in-out infinite;
+        }
+
+        .animate-fade-in-up {
+            animation: fade-in-up 0.8s ease-out forwards;
+            opacity: 0;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            #home .flex {
+                background: transparent !important;
+                backdrop-filter: none !important;
+                border: none !important;
+                padding: 0 !important;
+            }
+        }
+    </style>
 
     <!-- Services Section -->
     <section id="services" class="py-20 bg-white">
@@ -321,6 +416,98 @@
             } else {
                 nav.classList.remove('shadow-md');
             }
+        });
+    </script>
+
+    <!-- Particle animation for hero section -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const canvas = document.getElementById('particles-canvas');
+            const ctx = canvas.getContext('2d');
+            let particles = [];
+
+            // Set canvas size to match parent
+            function resizeCanvas() {
+                const parent = canvas.parentElement;
+                canvas.width = parent.offsetWidth;
+                canvas.height = parent.offsetHeight;
+            }
+
+            // Create particles
+            function createParticles() {
+                particles = [];
+                const particleCount = Math.floor(canvas.width * canvas.height / 10000);
+
+                for (let i = 0; i < particleCount; i++) {
+                    particles.push({
+                        x: Math.random() * canvas.width,
+                        y: Math.random() * canvas.height,
+                        radius: Math.random() * 2 + 0.5,
+                        color: Math.random() > 0.8 ? '#FF3B30' : '#ffffff',
+                        alpha: Math.random() * 0.5 + 0.1,
+                        speed: Math.random() * 0.5 + 0.1,
+                        direction: Math.random() * Math.PI * 2
+                    });
+                }
+            }
+
+            // Draw particles
+            function drawParticles() {
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+                particles.forEach(particle => {
+                    ctx.beginPath();
+                    ctx.arc(particle.x, particle.y, particle.radius, 0, Math.PI * 2);
+                    ctx.fillStyle = particle.color;
+                    ctx.globalAlpha = particle.alpha;
+                    ctx.fill();
+
+                    // Move particles
+                    particle.x += Math.cos(particle.direction) * particle.speed;
+                    particle.y += Math.sin(particle.direction) * particle.speed;
+
+                    // Change direction slightly for natural movement
+                    particle.direction += (Math.random() - 0.5) * 0.05;
+
+                    // Wrap around edges
+                    if (particle.x < 0) particle.x = canvas.width;
+                    if (particle.x > canvas.width) particle.x = 0;
+                    if (particle.y < 0) particle.y = canvas.height;
+                    if (particle.y > canvas.height) particle.y = 0;
+                });
+
+                // Draw connections between nearby particles
+                ctx.globalAlpha = 0.1;
+                ctx.strokeStyle = '#ffffff';
+                ctx.lineWidth = 0.3;
+
+                for (let i = 0; i < particles.length; i++) {
+                    for (let j = i + 1; j < particles.length; j++) {
+                        const dx = particles[i].x - particles[j].x;
+                        const dy = particles[i].y - particles[j].y;
+                        const distance = Math.sqrt(dx * dx + dy * dy);
+
+                        if (distance < 100) {
+                            ctx.beginPath();
+                            ctx.moveTo(particles[i].x, particles[i].y);
+                            ctx.lineTo(particles[j].x, particles[j].y);
+                            ctx.stroke();
+                        }
+                    }
+                }
+
+                requestAnimationFrame(drawParticles);
+            }
+
+            // Initialize
+            window.addEventListener('resize', function() {
+                resizeCanvas();
+                createParticles();
+            });
+
+            resizeCanvas();
+            createParticles();
+            drawParticles();
         });
     </script>
 </body>
