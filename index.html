@@ -4,12 +4,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Hackandslash Studios - Professional web development, penetration testing, and online courses">
-    <meta name="keywords" content="web development, web services, penetration testing, online courses">
     <title>Hackandslash Studios - Web Development Company</title>
-    <script src="https://cdn.tailwindcss.com" defer></script>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
+        @media (max-width: 768px) {
+            #home {
+                min-height: 18vh !important;
+                padding-top: 0.5vh !important;
+                padding-bottom: 0.5vh !important;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            #home h1 {
+                font-size: 1.1rem !important;
+                margin-bottom: 0.1rem !important;
+            }
+
+            #home p {
+                font-size: 0.85rem !important;
+                margin-bottom: 0.1rem !important;
+            }
+
+            #home .flex {
+                margin-top: 0.1rem !important;
+                gap: 0.2rem !important;
+            }
+
+            #home .flex a {
+                padding: 0.18rem 0.5rem !important;
+                font-size: 0.65rem !important;
+                min-width: 65px !important;
+            }
+        }
+
         :root {
             --primary-black: #000000;
             --primary-red: #fd0000;
@@ -17,7 +47,6 @@
 
         body {
             font-family: 'Poppins', sans-serif;
-            text-rendering: optimizeSpeed;
         }
 
         .gradient-bg {
@@ -32,49 +61,10 @@
 
         .hover-scale {
             transition: transform 0.3s ease;
-            will-change: transform;
         }
 
         .hover-scale:hover {
             transform: scale(1.05);
-        }
-
-        /* Improved mobile responsiveness */
-        @media (max-width: 768px) {
-            #home {
-                min-height: 18vh !important;
-                padding-top: 0.5vh !important;
-                padding-bottom: 0.5vh !important;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-            }
-
-            #home h1 {
-                font-size: 1.2rem !important;
-                margin-bottom: 0.2rem !important;
-                line-height: 1.3;
-            }
-
-            #home p {
-                font-size: 0.9rem !important;
-                margin-bottom: 0.2rem !important;
-            }
-
-            #home .flex {
-                margin-top: 0.2rem !important;
-                gap: 0.3rem !important;
-            }
-
-            #home .flex a {
-                padding: 0.2rem 0.6rem !important;
-                font-size: 0.7rem !important;
-                min-width: 70px !important;
-            }
-            
-            .service-card {
-                padding: 1rem !important;
-            }
         }
     </style>
 
@@ -85,13 +75,12 @@
     <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-sm shadow-sm">
         <div class="container mx-auto px-4 py-3 flex justify-between items-center">
             <div class="flex items-center">
-                <img src="./H_S_2-removebg-preview.png" alt="Hackandslash Studios" class="h-10" width="150" height="40">
+                <img src="./H_S_2-removebg-preview.png" alt="Hackandslash Studios" class="h-10">
             </div>
             <div class="hidden md:flex space-x-8">
-                <a href="#home" class="text-gray-800 hover:text-red-500 transition-colors duration-300">Home</a>
+                <a href="#home" class="text-gray-800 hover:text-red-500">Home</a>
                 <a href="#services" class="text-gray-800 hover:text-red-500">Services</a>
                 <a href="#portfolio" class="text-gray-800 hover:text-red-500">Portfolio</a>
-                <a href="online-classes.html" class="text-gray-800 hover:text-red-500">Online Classes</a>
                 <a href="#about" class="text-gray-800 hover:text-red-500">About</a>
                 <a href="#contact" class="text-gray-800 hover:text-red-500">Contact</a>
             </div>
@@ -106,7 +95,6 @@
                 <a href="#home" class="block text-gray-800 hover:text-red-500">Home</a>
                 <a href="#services" class="block text-gray-800 hover:text-red-500">Services</a>
                 <a href="#portfolio" class="block text-gray-800 hover:text-red-500">Portfolio</a>
-                <a href="online-classes.html" class="block text-gray-800 hover:text-red-500">Online Classes</a>
                 <a href="#about" class="block text-gray-800 hover:text-red-500">About</a>
                 <a href="#contact" class="block text-gray-800 hover:text-red-500">Contact</a>
             </div>
@@ -117,7 +105,7 @@
     <!-- Hero Section -->
     <section id="home" class="min-h-screen flex items-center justify-center pt-16 bg-cover bg-center relative overflow-hidden" style="background-image: url(./Gemini_Generated_Image_85m54s85m54s85m5.png); background-size: cover; background-position: center;">
         <!-- Dark overlay -->
-        <div class="absolute inset-0 bg-black/65 z-0"></div>
+        <div class="absolute inset-0 bg-black/60 z-0"></div>
 
 
         <!-- Animated background elements removed to eliminate red glowing bubbles -->
@@ -132,8 +120,8 @@
                     <div class="h-1 w-24 bg-gradient-to-r from-red-500 to-red-600 mt-2 mx-auto rounded-full"></div>
                 </div>
 
-                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-tight text-white mb-6 animate-fade-in-up" style="animation-delay: 0.6s; padding-right: 0.4rem; padding-bottom: 0.15em;">
-                    Transform Your <span class="text-gradient inline-block" style="padding-right: 0.2rem; display: inline-block; vertical-align: baseline;">Digital Presence</span>
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-tight text-white mb-6 animate-fade-in-up" style="animation-delay: 0.6s; padding-right: 0.2rem;">
+                    Transform Your <span class="text-gradient inline-block" style="padding-right: 0.1rem; display: inline-block;">Digital Presence</span>
                 </h1>
 
                 <p class="text-lg md:text-xl text-gray-200 font-light max-w-2xl mb-6 animate-fade-in-up" style="animation-delay: 0.9s;">
@@ -256,10 +244,9 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-semibold mb-2"><a href="online-classes.html" class="text-gray-800 hover:text-red-500 transition-colors duration-300">Online Classes</a></h3>
-                    <p class="text-gray-600">Professional courses taught by industry experts to help you master in-demand skills.</p>
+                    <h3 class="text-xl font-semibold mb-2">Online Courses</h3>
+                    <p class="text-gray-600">Interactive learning programs and professional development courses.</p>
                 </div>
-
             </div>
         </div>
     </section>
@@ -271,8 +258,8 @@
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Add your portfolio items here -->
                 <div class="group relative overflow-hidden rounded-xl hover-scale">
-                    <img src="https://images.unsplash.com/photo-1517292987719-0369a794ec0f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Project 1" class="w-full h-64 object-cover" loading="lazy" width="800" height="500">
-                    <div class="absolute inset-0 bg-black/70 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300">
+                    <img src="https://images.unsplash.com/photo-1517292987719-0369a794ec0f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Project 1" class="w-full h-64 object-cover">
+                    <div class="absolute inset-0 bg-black/70 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
                         <div class="text-center text-white p-4">
                             <h3 class="text-xl font-semibold">E-commerce Website</h3>
                             <p class="text-sm mt-2">Online store development</p>
@@ -392,95 +379,122 @@
         </div>
     </footer>
 
-    <script defer>
-        // Combined scripts for better performance
-        document.addEventListener('DOMContentLoaded', function() {
-            // Smooth scroll for anchor links
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    document.querySelector(this.getAttribute('href')).scrollIntoView({
-                        behavior: 'smooth'
-                    });
-                    // Close mobile menu if open
-                    document.getElementById('mobile-menu').classList.add('hidden');
+    <script>
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
                 });
+                // Close mobile menu if open
+                document.getElementById('mobile-menu').classList.add('hidden');
             });
+        });
 
-            // Add shadow to navbar on scroll
-            window.addEventListener('scroll', function() {
-                const nav = document.querySelector('nav');
-                if (window.scrollY > 0) {
-                    nav.classList.add('shadow-md');
-                } else {
-                    nav.classList.remove('shadow-md');
-                }
-            });
-
-            // Simplified particle animation with reduced complexity for better performance
-            const canvas = document.getElementById('particles-canvas');
-            if (canvas) {
-                const ctx = canvas.getContext('2d');
-                let particles = [];
-                
-                // Set canvas size to match parent
-                function resizeCanvas() {
-                    const parent = canvas.parentElement;
-                    canvas.width = parent.offsetWidth;
-                    canvas.height = parent.offsetHeight;
-                }
-
-                // Create particles with reduced count for better performance
-                function createParticles() {
-                    particles = [];
-                    const particleCount = Math.min(50, Math.floor(canvas.width * canvas.height / 20000));
-
-                    for (let i = 0; i < particleCount; i++) {
-                        particles.push({
-                            x: Math.random() * canvas.width,
-                            y: Math.random() * canvas.height,
-                            radius: Math.random() * 2 + 0.5,
-                            color: Math.random() > 0.8 ? '#FF3B30' : '#ffffff',
-                            alpha: Math.random() * 0.5 + 0.1,
-                            speed: Math.random() * 0.5 + 0.1,
-                            direction: Math.random() * Math.PI * 2
-                        });
-                    }
-                }
-
-                // Optimized particle drawing with reduced connections
-                function drawParticles() {
-                    ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-                    particles.forEach(particle => {
-                        ctx.beginPath();
-                        ctx.arc(particle.x, particle.y, particle.radius, 0, Math.PI * 2);
-                        ctx.fillStyle = particle.color;
-                        ctx.globalAlpha = particle.alpha;
-                        ctx.fill();
-
-                        // Move particles
-                        particle.x += Math.cos(particle.direction) * particle.speed;
-                        particle.y += Math.sin(particle.direction) * particle.speed;
-
-                        // Wrap around edges
-                        if (particle.x < 0) particle.x = canvas.width;
-                        if (particle.x > canvas.width) particle.x = 0;
-                        if (particle.y < 0) particle.y = canvas.height;
-                        if (particle.y > canvas.height) particle.y = 0;
-                    });
-
-                    requestAnimationFrame(drawParticles);
-                }
-
-                // Initialize with event listener
-                window.addEventListener('resize', resizeCanvas);
-                resizeCanvas();
-                createParticles();
-                drawParticles();
+        // Add shadow to navbar on scroll
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 0) {
+                nav.classList.add('shadow-md');
+            } else {
+                nav.classList.remove('shadow-md');
             }
         });
     </script>
+
+    <!-- Particle animation for hero section -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const canvas = document.getElementById('particles-canvas');
+            const ctx = canvas.getContext('2d');
+            let particles = [];
+
+            // Set canvas size to match parent
+            function resizeCanvas() {
+                const parent = canvas.parentElement;
+                canvas.width = parent.offsetWidth;
+                canvas.height = parent.offsetHeight;
+            }
+
+            // Create particles
+            function createParticles() {
+                particles = [];
+                const particleCount = Math.floor(canvas.width * canvas.height / 10000);
+
+                for (let i = 0; i < particleCount; i++) {
+                    particles.push({
+                        x: Math.random() * canvas.width,
+                        y: Math.random() * canvas.height,
+                        radius: Math.random() * 2 + 0.5,
+                        color: Math.random() > 0.8 ? '#FF3B30' : '#ffffff',
+                        alpha: Math.random() * 0.5 + 0.1,
+                        speed: Math.random() * 0.5 + 0.1,
+                        direction: Math.random() * Math.PI * 2
+                    });
+                }
+            }
+
+            // Draw particles
+            function drawParticles() {
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+                particles.forEach(particle => {
+                    ctx.beginPath();
+                    ctx.arc(particle.x, particle.y, particle.radius, 0, Math.PI * 2);
+                    ctx.fillStyle = particle.color;
+                    ctx.globalAlpha = particle.alpha;
+                    ctx.fill();
+
+                    // Move particles
+                    particle.x += Math.cos(particle.direction) * particle.speed;
+                    particle.y += Math.sin(particle.direction) * particle.speed;
+
+                    // Change direction slightly for natural movement
+                    particle.direction += (Math.random() - 0.5) * 0.05;
+
+                    // Wrap around edges
+                    if (particle.x < 0) particle.x = canvas.width;
+                    if (particle.x > canvas.width) particle.x = 0;
+                    if (particle.y < 0) particle.y = canvas.height;
+                    if (particle.y > canvas.height) particle.y = 0;
+                });
+
+                // Draw connections between nearby particles
+                ctx.globalAlpha = 0.1;
+                ctx.strokeStyle = '#ffffff';
+                ctx.lineWidth = 0.3;
+
+                for (let i = 0; i < particles.length; i++) {
+                    for (let j = i + 1; j < particles.length; j++) {
+                        const dx = particles[i].x - particles[j].x;
+                        const dy = particles[i].y - particles[j].y;
+                        const distance = Math.sqrt(dx * dx + dy * dy);
+
+                        if (distance < 100) {
+                            ctx.beginPath();
+                            ctx.moveTo(particles[i].x, particles[i].y);
+                            ctx.lineTo(particles[j].x, particles[j].y);
+                            ctx.stroke();
+                        }
+                    }
+                }
+
+                requestAnimationFrame(drawParticles);
+            }
+
+            // Initialize
+            window.addEventListener('resize', function() {
+                resizeCanvas();
+                createParticles();
+            });
+
+            resizeCanvas();
+            createParticles();
+            drawParticles();
+        });
+    </script>
 </body>
+
 
 </html>
